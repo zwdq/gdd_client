@@ -1,0 +1,60 @@
+<view class="gallery">
+	<view class='tipTitle'>
+		上传个人照片
+	</view>
+	<view class='item-ot'>
+		<view class="item">
+			<!-- 添加按钮 -->
+			<view class="addIcon" data-index='0' bindtap="chooseImage" wx:if="{{imgBoolean[0]}}">
+				<view class=''>+</view>
+			</view>
+			<!-- 上传的图 -->
+			<view class='itemImg'>
+				<image src="{{uploadedImages[0]}}" data-src="{{uploadedImages[0]}}" data-index='0' bindtap="previewImage" mode="aspectFill" />
+				<!-- 删除按钮 -->
+				<view class="delete" bindtap="deleteImg" data-index='0'>X</view>
+			</view>
+			<view class='boxStyle'></view>
+		</view>
+		<view class='itemTxt'>正面照</view>
+	</view>
+	<view class='item-ot'>
+		<view class="item">
+			<!-- 添加按钮 -->
+			<view class="addIcon" data-index='1' bindtap="chooseImage" wx:if="{{imgBoolean[1]}}">
+				<view class=''>+</view>
+			</view>
+			<!-- 上传的图 -->
+			<view class='itemImg'>
+				<image src="{{uploadedImages[1]}}" data-src="{{uploadedImages[1]}}" data-index='1' bindtap="previewImage" mode="aspectFill" />
+				<!-- 删除按钮 -->
+				<view class="delete" bindtap="deleteImg" data-index='1'>X</view>
+			</view>
+			<view class='boxStyle'></view>
+		</view>
+		<view class='itemTxt'>工作照</view>
+	</view>
+	<view class='item-ot'>
+		<view class="item">
+			<!-- 添加按钮 -->
+			<view class="addIcon" data-index='2' bindtap="chooseImage" wx:if="{{imgBoolean[2]}}">
+				<view class=''>+</view>
+			</view>
+			<!-- 上传的图 -->
+			<view class='itemImg'>
+				<image src="{{uploadedImages[2]}}" data-src="{{uploadedImages[2]}}" data-index='2' bindtap="previewImage" mode="aspectFill" />
+				<!-- 删除按钮 -->
+				<view class="delete" bindtap="deleteImg" data-index='2' data-index="{{index}}">X</view>
+			</view>
+			<view class='boxStyle'></view>
+		</view>
+		<view class='itemTxt'>身份证照</view>
+	</view>
+
+	<view class='uploadFinish'>
+		<a class="uploadFinishBtn" href="javasctipt:;" bindtap="submit">提 交</a>
+	</view>
+	<view class='statementTxt'>
+		<view>我们会尊重并严格保护您的隐私</view>
+	</view>
+</view>

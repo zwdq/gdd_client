@@ -1,0 +1,140 @@
+page {
+  min-height: 100%;
+  background-color: #fafafa;
+}
+
+.li-wrap {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24rpx;
+  background: #fff;
+  flex-direction: column;
+  padding-left: 30rpx;
+}
+
+.li-wrap .list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100rpx;
+  box-sizing: border-box;
+  border-bottom: 1rpx solid #f1f1f1;
+  padding-right: 30rpx;
+}
+
+.li-wrap .list:last-child {
+  border-bottom: none;
+}
+
+.li-wrap .list .list-l {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.li-wrap .list .list-l .icon {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 20rpx;
+  /* background: #f1f1f1; */
+}
+
+.li-wrap .list .list-l .icon .img {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.li-wrap .list .list-l .text {
+  font-size: 28rpx;
+  color: #333;
+}
+
+.li-wrap .list .arrow {
+  width: 10rpx;
+  height: 10rpx;
+  border-top: 4rpx solid #ccc;
+  border-right: 4rpx solid #ccc;
+  transform: rotate(45deg);
+}
+
+.company {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10rpx 0 50rpx 0;
+}
+
+.company .c-wrap {
+  width: 30%;
+  position: relative;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.company .c-wrap .line {
+  height: 40rpx;
+  width: 100%;
+  border-bottom: 2rpx solid #999;
+  position: absolute;
+  top: 0;
+}
+
+.company .c-wrap .text {
+  background: #fafafa;
+  color: #999;
+  font-size: 30rpx;
+  text-align: center;
+  width: 80%;
+  z-index: 2;
+}
+
+.company .tip {
+  font-size: 24rpx;
+  color: #b3b3b3;
+}
+.btn-wrap{
+  width: 80%;
+  margin-top: 60rpx;
+  margin-bottom: 60rpx;
+  background-color:orange;
+  color: white;
+  border-radius: 98rpx; 
+  font-size: large;
+}
+
+
+.active{
+  background: linear-gradient(to right, #ff3456, #ff347d);
+  box-shadow: 0rpx 10rpx 20rpx #f1f1f1;
+  color: #fff;
+}
+
+
+button{
+  height:100rpx;
+  width: 80%;
+  margin-top: 40rpx;
+  margin-bottom: 40rpx;
+  background-color:orange;
+  color: white;
+  border-radius: 98rpx; 
+  font-size: large;
+}
+
+.touimage {
+  /* 居中 */
+  margin: 0 auto;  
+  margin-top:50rpx;
+  margin-bottom:50rpx;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  width: 500rpx;
+  height: 500rpx;
+  border-radius: 50%;
+}

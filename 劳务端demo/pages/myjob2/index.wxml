@@ -1,0 +1,62 @@
+
+<view class="tview" style="background-color:rgb(220,220,220)" >
+    <view class="tview2">
+      <text>任务状态:</text>
+      <text class="tview4">任务已完成</text>
+    </view>
+    <view class="tview2">
+      <text>发布单位:</text>
+      <text class="tview4">公司A</text>
+    </view>
+    <view class="tview2">
+      <text>任务金额:</text>
+      <text class="tview4">2000元</text>
+    </view>
+    <view class="tview2">
+      <text>任务天数:</text>
+      <text class="tview4">2天</text>
+    </view>
+    <view class="tview2">
+      <text>所需工种:</text>
+      <text class="tview4">瓦工</text>
+    </view>
+    <view class="tview2">
+      <text>所需人数:</text>
+      <text class="tview4">4人</text>
+    </view>
+    <view class="tview2">
+      <text>做工情况（日夜）:</text>
+      <text class="tview4">夜班</text>
+    </view>
+    <view class="tview2">
+      <text>是否有加班:</text>
+      <text class="tview4">否</text>
+    </view>
+    <view class="tview2">
+      <text>是否有住宿:</text>
+      <text class="tview4">否</text>
+    </view>
+    <view class="tview2">
+      <text>是否有补贴:</text>
+      <text class="tview4">200元</text>
+    </view>
+    <view class="tview2">
+      <text>地点:</text>
+      <text class="tview4">上海杨浦</text>
+    </view>
+    <view class="tview2">
+      <text>劳务公司评分:</text>
+      <text class="tview4">7分</text>
+    </view>
+    <view class="tview2">
+      <text>客户评分:</text>
+      <text class="tview4">6分</text>
+    </view>
+
+</view>
+
+<button form-type="submit" bindtap="toJobList">我要评分</button>
+
+
+
+

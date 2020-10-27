@@ -1,0 +1,52 @@
+
+<view class="tview" style="background-color:rgb(220,220,220)" >
+    <view class="tview2">
+      <text>任务编号:</text>
+      <text class="tview4">{{testdata.id}}</text>
+    </view>
+    <view class="tview2">
+      <text>发布单位:</text>
+      <text class="tview4">{{testdata.fbdw}}</text>
+    </view>
+    <view class="tview2">
+      <text>任务金额:</text>
+      <text class="tview4">{{testdata.money}}</text>
+    </view>
+    <view class="tview2">
+      <text>任务天数:</text>
+      <text class="tview4">{{testdata.days}}</text>
+    </view>
+    <view class="tview2">
+      <text>所需工种:</text>
+      <text class="tview4">{{testdata.cate}}</text>
+    </view>
+    <view class="tview2">
+      <text>所需人数:</text>
+      <text class="tview4">{{testdata.worknum}}</text>
+    </view>
+    <view class="tview2">
+      <text>做工情况（日夜）:</text>
+      <text class="tview4">{{testdata.daynight}}</text>
+    </view>
+    <view class="tview2">
+      <text>是否有加班:</text>
+      <text class="tview4">{{testdata.jiaban}}</text>
+    </view>
+    <view class="tview2">
+      <text>是否有住宿:</text>
+      <text class="tview4">{{testdata.zhusu}}</text>
+    </view>
+    <view class="tview2">
+      <text>是否有补贴:</text>
+      <text class="tview4">{{testdata.butie}}</text>
+    </view>
+    <view class="tview2">
+      <text>地点:</text>
+      <text class="tview4">{{testdata.area}}</text>
+    </view>
+
+</view>
+
+
+
+<button form-type="submit" bindtap="chakan">查看接此单的我的工人</button>

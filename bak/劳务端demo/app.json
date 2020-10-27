@@ -1,0 +1,29 @@
+{
+  "pages": [
+    "pages/page1/index",
+    "pages/page2/index",
+    "pages/submit/index",
+    "pages/myjob/index",
+    "pages/myscore/index"
+  ],
+  "tabBar": {
+    "selectedColor": "#1296db",
+    "font":"100",
+    "list": [{
+      "pagePath": "pages/page1/index",
+      "iconPath": "images/nav/icon-index-b.png",
+      "selectedIconPath": "images/nav/icon-index-r.png",
+      "text": "任务大厅"
+    },
+    {
+      "pagePath": "pages/page2/index",
+      "iconPath": "images/nav/icon-center-b.png",
+      "selectedIconPath": "images/nav/icon-center-r.png",
+      "text": "我"
+    }]
+  },
+  "sitemapLocation": "sitemap.json"
+
+}
+
+

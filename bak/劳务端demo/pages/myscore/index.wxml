@@ -1,0 +1,11 @@
+<view class="tview" style="background-color:rgb(220,220,220)" >
+    <view class="tview2">
+      <text>客户对我的评分:</text>
+      <text class="tview4">xxx</text>
+    </view>
+    <view class="tview2">
+      <text>工人对我的评分:</text>
+      <text class="tview4">xxx</text>
+    </view>
+</view>
+

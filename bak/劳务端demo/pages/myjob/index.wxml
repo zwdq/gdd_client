@@ -1,0 +1,61 @@
+<view class="tview" style="background-color:rgb(220,220,220)" >
+    <view class="tview2">
+      <text>任务状态:</text>
+      <text class="tview4">xxx</text>
+    </view>
+    <view class="tview2">
+      <text>发布单位:</text>
+      <text class="tview4">xxx</text>
+    </view>
+    <view class="tview2">
+      <text>任务金额:</text>
+      <text class="tview4">xxx</text>
+    </view>
+    <view class="tview2">
+      <text>地点:</text>
+      <text class="tview4">xxx</text>
+    </view>
+    <view class="tview2">
+      <text>所需工种:</text>
+      <text class="tview4">xxx</text>
+    </view>
+    <view class="tview2">
+      <text>所需人数:</text>
+      <text class="tview4">xxx</text>
+    </view>
+    <view class="tview2">
+      <text>做工情况（日夜）:</text>
+      <text class="tview4">xxx</text>
+    </view>
+    <view class="tview2">
+      <text>是否有加班费:</text>
+      <text class="tview4">xxx</text>
+    </view>
+    <view class="tview2">
+      <text>是否有补贴:</text>
+      <text class="tview4">xxx</text>
+    </view>
+    <view class="tview2">
+      <text>工人给你的评分:</text>
+      <text class="tview4">xxx</text>
+    </view>
+    <view class="tview2">
+      <text>客户给你的评分:</text>
+      <text class="tview4">xxx</text>
+    </view>
+    <view class="tview2">
+      <text>我要打分</text>
+    </view>
+
+</view>
+
+<navigator 
+url="../page1/index" 
+style="  margin-top:70rpx;margin-left:40rpx;color:green;">
+跳转到页面1
+</navigator>
+<navigator 
+url="../page3/index" 
+style="  margin-top:20rpx;margin-left:40rpx;color:green;">
+跳转到页面3
+</navigator>

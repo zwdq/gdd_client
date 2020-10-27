@@ -1,0 +1,18 @@
+<view class="container">
+  <form bindsubmit="submit">
+    <view>
+      <text>账户:</text>
+      <input name="account"/>
+    </view>
+    <view>
+      <text>密码:</text>
+      <input name="password"/>
+    </view>
+
+    <button form-type="submit">登录</button>
+    
+    
+  </form>
+
+</view>
+

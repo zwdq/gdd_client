@@ -1,0 +1,59 @@
+
+<view class="table">
+
+  <view  class="tr bg-w" >
+    <view class="th">请按下列按钮进行筛选</view>
+  </view>
+
+</view>
+
+
+<view class='view1'>
+  <view class="section__title" style='display:inline-block;text-indent:25rpx;float:left;'>选择任务</view>
+    <picker bindchange="pickChange2" value="{{index}}" range="{{array2}}" >
+      <view >{{detailed2}}</view>
+    </picker>
+</view>
+
+
+
+
+
+<view class="table">
+
+  <view  class="tr bg-w" >
+    <view class="th">任务</view>
+    <view class="th">任务描述</view>
+  </view>
+
+  <block wx:for="{{testdata}}">
+    <navigator url="/pages/myworkersjob/index?id={{item.id}}" open-type="navigate" class="uploader-text">
+    <view class="tr bg-g" wx:if="{{index%2 == 0}}">
+        <view class="td">{{item.id}}</view>
+        <view class="td" wx:if="{{item.order_status == 201}}">工人已接单，劳务公司未推送</view>
+        <view class="td" wx:if="{{item.order_status == 301}}">工人已接单，劳务公司已推送</view>
+        <view class="td" wx:if="{{item.order_status == 401}}">客户已确认，正在完成中</view>
+        <view class="td" wx:if="{{item.order_status == 501}}">任务完成</view>
+    </view>
+    </navigator>
+    
+    <navigator url="/pages/myworkersjob/index?id={{item.id}}" open-type="navigate" class="uploader-text">
+    <view class="tr" wx:if="{{index%2 == 1}}">
+        <view class="td">{{item.id}}</view>
+        <view class="td" wx:if="{{item.order_status == 201}}">工人已接单，劳务公司未推送</view>
+        <view class="td" wx:if="{{item.order_status == 301}}">工人已接单，劳务公司已推送</view>
+        <view class="td" wx:if="{{item.order_status == 401}}">客户已确认，正在完成中</view>
+        <view class="td" wx:if="{{item.order_status == 501}}">任务完成</view>
+    </view>
+    </navigator>
+
+  </block>
+
+  <text>{{testdata.id}}</text>
+</view>
+
+
+
+
+
+

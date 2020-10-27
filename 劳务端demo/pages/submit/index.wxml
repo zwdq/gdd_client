@@ -1,0 +1,38 @@
+<view class="container">
+  <form bindsubmit="submit">
+    <view>
+      <text>单位名称:</text>
+      <input name="laowu_name" value="{{testdata.laowu_name}}" />
+    </view>
+    <view>
+      <text>单位组织结构代码:</text>
+      <input name="laowu_zzjgdm" value="{{testdata.laowu_zzjgdm}}" />
+    </view>
+    <view>
+      <text>单位联系人电话:</text>
+      <input name="lxr_phone" value="{{testdata.lxr_phone}}" />
+    </view>
+    <view>
+      <text>单位联系人姓名:</text>
+      <input name="lxr_name" value="{{testdata.lxr_name}}" />
+    </view>
+    <view>
+      <text>银行账号:</text>
+      <input name="bank_account" value="{{testdata.bank_account}}" />
+    </view>
+    <view>
+      <text>收款银行名:</text>
+      <input name="bank_name" value="{{testdata.bank_name}}" />
+    </view>
+    <view>
+      <text>收款人全称:</text>
+      <input name="bank_skr_name" value="{{testdata.bank_skr_name}}" />
+    </view>
+
+    <button form-type="submit" bindtap="fashe">修改信息</button>
+    
+    
+  </form>
+
+</view>
+

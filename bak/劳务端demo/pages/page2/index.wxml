@@ -1,0 +1,42 @@
+<view class="container">
+    
+    
+    <image src="/images/timg.jpg" 
+    style="width:200rpx;height:250rpx;margin-top:100rpx;margin-left:70rpx;margin-bottom:80rpx">
+    </image> 
+    
+    <text style="margin-left:100rpx;margin-top:100rpx;margin-bottom:100rpx;">公司名称</text>
+
+    <view class="li-wrap">
+        <view class="list" bindtap="toSubmit">
+            <view class="list-l">
+                <view class="icon">
+                    <image class="img" src="/images/icon/icon-address-r.png"></image>
+                </view>
+                <view class="text">公司信息管理</view>
+            </view>
+            <view class="arrow"></view>
+        </view>
+    </view>
+    <view class="li-wrap">
+        <view class="list" bindtap="toMyScore">
+            <view class="list-l">
+                <view class="icon">
+                    <image class="img" src="/images/icon/icon-footprint-r.png"></image>
+                </view>
+                <view class="text">我的评分</view>
+            </view>
+            <view class="arrow"></view>
+        </view>
+    </view>
+
+
+
+    <view class="company">
+        <view class="c-wrap">
+            <view class="text">蓝领</view>
+            <view class="line"></view>
+        </view>
+        <view class="tip">最受欢迎的蓝领工作软件</view>
+    </view>
+</view>

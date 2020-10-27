@@ -1,0 +1,21 @@
+.container{
+  margin:50rpx;
+}
+view{
+  margin-bottom:30rpx;
+}
+input{
+  width:600rpx;
+  margin-top:10rpx;
+  border-bottom:2rpx solid #ccc
+}
+label{
+  display:block;
+  margin:8rpx;
+}
+button{
+  margin:10rpx;
+}
+page{
+  background-color:rgb(250,235,215);  
+  }

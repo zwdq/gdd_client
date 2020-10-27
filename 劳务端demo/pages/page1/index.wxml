@@ -1,0 +1,65 @@
+
+<view class="table">
+  <view  class="tr bg-w" >
+    <view class="th">请按下列按钮进行筛选</view>
+  </view>
+</view>
+
+<view class='view1'>
+  <view class="section__title" style='display:inline-block;text-indent:25rpx;float:left;'>选择工种</view>
+    <picker bindchange="pickChange1" value="{{index}}" range="{{array1}}" >
+      <view>{{detailed1}}</view>
+    </picker>
+</view>
+<view class='view1'>
+  <view class="section__title" style='display:inline-block;text-indent:25rpx;float:left;'>选择金额</view>
+    <picker bindchange="pickChange2" value="{{index}}" range="{{array2}}" >
+      <view>{{detailed2}}</view>
+    </picker>
+</view>
+<view class='view1'>
+  <view class="section__title" style='display:inline-block;text-indent:25rpx;float:left;'>日夜做工</view>
+    <picker bindchange="pickChange3" value="{{index}}" range="{{array3}}" >
+      <view>{{detailed3}}</view>
+    </picker>
+</view>
+<view class='view1'>
+  <view class="section__title" style='display:inline-block;text-indent:25rpx;float:left;'>选择排序</view>
+    <picker bindchange="pickChange4" value="{{index}}" range="{{array4}}" >
+      <view>{{detailed4}}</view>
+    </picker>
+</view>
+
+<view class="table">
+  <view  class="tr bg-w" >
+    <view class="th">任务</view>
+    <view class="th">地点</view>
+    <view class="th ">描述</view>
+    <view class="th ">总价格</view>
+  </view>
+
+  <block wx:for="{{testdata}}">
+    <navigator url="/pages/jobinfo/index?id={{item.order_id}}" open-type="navigate" class="uploader-text">
+    <view class="tr bg-g" wx:if="{{index%2 == 0}}">
+        <view class="td">{{item.order_id}}</view>
+        <view class="td">{{item.city}}{{item.district}}</view>
+        <view class="td">{{item.workers_name}}</view>
+        <view class="td">{{item.price_total}}</view>
+    </view>
+    </navigator>
+    
+    <navigator url="/pages/jobinfo/index?id={{item.order_id}}" open-type="navigate" class="uploader-text">
+    <view class="tr" wx:if="{{index%2 == 1}}" >
+        <view class="td">{{item.order_id}}</view>
+        <view class="td">{{item.city}}{{item.district}}</view>
+        <view class="td">{{item.workers_name}}</view>
+        <view class="td">{{item.price_total}}</view>
+    </view>
+    </navigator>
+
+  </block>
+
+</view>
+
+
+
