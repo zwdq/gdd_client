@@ -1,0 +1,39 @@
+
+<view class="tview" style="background-color:rgb(220,220,220)" >
+    <view class="tview2">
+      <text>单位名称:</text>
+      <text class="tview4">{{testdata.laowu_name}}</text>
+    </view>
+    <view class="tview2">
+      <text>单位组织结构代码:</text>
+      <text class="tview4">{{testdata.laowu_zzjgdm}}</text>
+    </view>
+    <view class="tview2">
+      <text>单位联系人电话:</text>
+      <text class="tview4">{{testdata.lxr_phone}}</text>
+    </view>
+    <view class="tview2">
+      <text>单位联系人姓名:</text>
+      <text class="tview4">{{testdata.lxr_name}}</text>
+    </view>
+    <view class="tview2">
+      <text>银行账号:</text>
+      <text class="tview4">{{testdata.bank_account}}</text>
+    </view>
+    <view class="tview2">
+      <text>收款银行名:</text>
+      <text class="tview4">{{testdata.bank_name}}</text>
+    </view>
+    <view class="tview2">
+      <text>收款人全称:</text>
+      <text class="tview4">{{testdata.bank_skr_name}}</text>
+    </view>
+
+</view>
+
+
+
+<button wx:if="{{bangdingflag == 1}}" style="background-color:gray;" form-type="submit" >我要绑定这个劳务公司</button>
+<button wx:if="{{bangdingflag == 0}}" form-type="submit" bindtap="bangding">我要绑定这个劳务公司</button>
+<button wx:if="{{bangdingflag == 1}}" form-type="submit" bindtap="quxiaobangding">我要取消绑定这个劳务公司</button>
+<button wx:if="{{bangdingflag == 0}}" style="background-color:gray;" form-type="submit" >我要取消绑定这个劳务公司</button>

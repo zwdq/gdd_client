@@ -1,0 +1,80 @@
+
+page{
+  background-color:rgb(250,235,215);  
+  }
+.table {
+  border: 0px solid darkgray;
+ }
+ .tr {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 3rem;
+  align-items: center;
+ }
+ .td {
+  width:100%;
+  justify-content: center;
+  text-align: center;
+  color:green
+ }
+ .bg-w{
+  background: snow;
+ }
+ .bg-g{
+  background: #E6F3F9;
+ }
+ .th {
+  width: 100%;
+  justify-content: center;
+  background: green;
+  color: #fff;
+  display: flex;
+  height: 3rem;
+  align-items: center;
+ }
+
+
+ 
+ .tabLayer{
+  box-shadow: 0 5px 5px rgba(0,0,0,.15);
+  width:750rpx;
+  overflow: hidden;
+  position: fixed;
+  top:90rpx;
+  z-index: 1;
+  background: #fff;
+  padding-bottom: 40rpx;
+  border-bottom: solid 1px #eee;
+  text-align: center;
+}
+.tabLayer text{
+  width:210rpx;
+  height:60rpx;
+  line-height:60rpx;
+  float:left;
+  border: solid 1px #eee;
+  margin:20rpx 0 0 26rpx;
+  font-size:15px;
+}
+.tabLayer .active{
+  color:#e64340;
+  border-color:#e64340;
+  }
+
+
+
+  .dt{width:64rpx;height:56rpx;}
+  .flex-row {display: -webkit-box;display: -webkit-flex;display: flex;-webkit-box-orient: horizontal;flex-direction: row;}
+  .flex-col {display: -webkit-box;display: -webkit-flex;display: flex;-webkit-box-orient: vertical;flex-direction: column;}
+  .flex-grow-0 {min-width: 0;-webkit-box-flex: 0;-ms-flex-positive: 0;flex-grow: 0;-ms-flex-negative: 0;flex-shrink: 0;}
+  .flex-grow-1 {min-width: 0;-webkit-box-flex: 1;-ms-flex-positive: 1;flex-grow: 1;-ms-flex-negative: 1;flex-shrink: 1;}
+  .flex-x-center {display: -webkit-box;display: -webkit-flex;display: flex;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;}
+  .flex-y-center {display: -webkit-box;display: -webkit-flex;display: flex;-webkit-box-align: center;-ms-flex-align: center;-ms-grid-row-align: center;align-items: center;}
+  .flex-y-bottom {display: -webkit-box;display: -webkit-flex;display: flex;-webkit-box-align: end;-ms-flex-align: end;-ms-grid-row-align: flex-end;align-items: flex-end;}
+  .view1{
+    height:84rpx;background:#fff;border-bottom:1rpx solid #dfdbdc;line-height:84rpx;
+  }
+  picker{
+    display:inline-block;width:71%;margin-left:36rpx;height:75rpx;letter-spacing:2rpx;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;
+  }

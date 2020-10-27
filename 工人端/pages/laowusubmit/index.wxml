@@ -1,0 +1,38 @@
+
+
+<view class="table">
+
+  <view  class="tr bg-w" >
+    <view class="th">单位名称</view>
+    <view class="th">单位组织机构代码</view>
+
+  </view>
+
+  <block wx:for="{{testdata}}">
+    <navigator url="/pages/laowuinfo/index?laowu_zzjgdm={{item.laowu_zzjgdm}}" open-type="navigate" class="uploader-text">
+    <view class="tr bg-g" wx:if="{{index%2 == 0}}">
+        <view class="td">{{item.laowu_name}}</view>
+        <view class="td">{{item.laowu_zzjgdm}}</view>
+
+    </view>
+    </navigator>
+    
+    <navigator url="/pages/laowuinfo/index?laowu_zzjgdm={{item.laowu_zzjgdm}}" open-type="navigate" class="uploader-text">
+    <view class="tr" wx:if="{{index%2 == 1}}">
+        <view class="td">{{item.laowu_name}}</view>
+        <view class="td">{{item.laowu_zzjgdm}}</view>
+
+    </view>
+    </navigator>
+
+  </block>
+
+  <text>目前我绑定的劳务公司名:  </text>
+  <text>{{laowudata.laowu_name}}</text>
+</view>
+
+
+
+
+
+

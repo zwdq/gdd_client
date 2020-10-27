@@ -1,0 +1,39 @@
+.tview{
+  margin-top:75rpx;
+  margin-left:40rpx;
+  width:670rpx;
+  
+}
+.tview2{
+  margin-top:70rpx;
+  margin-left:0rpx;
+  margin-top:10rpx;
+  border-bottom:2rpx solid #ccc;
+  font-size: large;
+  color: black;
+}
+.tview4{
+  float:right;
+  margin-right:20rpx;
+  font-size: large;
+  color: blue;
+}
+page{
+  background-color:rgb(250,235,215);  
+  }
+button{
+    width: 80%;
+    margin-top: 60rpx;
+    background-color:orange;
+    color: white;
+    border-radius: 98rpx; 
+    font-size: large;
+  }
+.button-gray{
+    width: 80%;
+    margin-top: 60rpx;
+    background-color:gray;
+    color: white;
+    border-radius: 98rpx; 
+    font-size: large;
+  }

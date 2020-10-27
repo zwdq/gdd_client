@@ -1,0 +1,106 @@
+<text>{{e.datail.value}}</text>
+
+<view class="container">
+  <form bindsubmit="submit">
+    <view>
+      <text>姓名:</text>
+      <input name="name" value="{{testdata.name}}" />
+    </view>
+    <view>
+      <text>身份证号:</text>
+      <input name="certid" value="{{testdata.certid}}" />
+    </view>
+    <view>
+      <text>城市:</text>
+      <input name="city" value="{{testdata.city}}" />
+    </view>
+    <view>
+      <text>联系电话:</text>
+      <input name="phone1" value="{{testdata.phone1}}" />
+    </view>
+    <view>
+      <text>紧急联系人电话:</text>
+      <input name="phone2" value="{{testdata.phone2}}" />
+    </view>
+    <view>
+      <text>婚姻状况:</text>
+      <input name="marriage" value="{{testdata.marriage}}" />
+    </view>
+    <view>
+      <text>收款信息</text>
+      <input name="shoukuan" value="{{testdata.shoukuan}}" />
+    </view>
+    <view>
+      <text>主要工种:</text>
+      <radio-group name='cate1'>
+        <label><radio value="水电工" checked />水电工</label>
+        <label><radio value="泥工" />泥工</label>       
+        <label><radio value="瓦工" />瓦工</label>    
+        <label><radio value="木工" />木工</label>  
+        <label><radio value="杂务工" />杂务工</label>  
+        <label><radio value="油漆工" />油漆工</label>     
+      </radio-group>
+    </view> 
+    <view>
+      <text>辅助工种:</text>
+      <radio-group name='cate2'>
+        <label><radio value="水电工" checked />水电工</label>
+        <label><radio value="泥工" />泥工</label>       
+        <label><radio value="瓦工" />瓦工</label>    
+        <label><radio value="木工" />木工</label>  
+        <label><radio value="杂务工" />杂务工</label>  
+        <label><radio value="油漆工" />油漆工</label>     
+      </radio-group>
+    </view> 
+    <view>
+      <text>性别:</text>
+      <radio-group name='gender'>
+        <label><radio value="male" checked />男</label>
+        <label><radio value="female" />女</label>             
+      </radio-group>
+    </view>    
+    <view>
+      <text>是否有工作经验:</text>
+      <radio-group name='workexp'>
+        <label><radio value="yes" checked />是</label>
+        <label><radio value="no" />否</label>             
+      </radio-group>
+    </view>   
+    <view>
+      <text>是否做过班组长:</text>
+      <radio-group name='leaderexp'>
+        <label><radio value="yes" checked />是</label>
+        <label><radio value="no" />否</label>             
+      </radio-group>
+    </view>  
+    <view>
+      <text>工作性质类型:</text>
+      <radio-group name='workcate'>
+        <label><radio value="1" checked />做点工</label>
+        <label><radio value="0" />包公</label>             
+      </radio-group>
+    </view>  
+    <view>
+      <text>日夜班:</text>
+      <radio-group name='daynight'>
+        <label><radio value="1" checked />日班</label>
+        <label><radio value="0" />夜班</label>             
+      </radio-group>
+    </view>  
+    <view>
+      <text>是否会维修:</text>
+      <radio-group name='is_repair'>
+        <label><radio value="yes" checked />会</label>
+        <label><radio value="不会" />不会</label>             
+      </radio-group>
+    </view> 
+
+    <button form-type="submit">上传信息</button>
+    
+    
+  </form>
+
+</view>
+
+
+

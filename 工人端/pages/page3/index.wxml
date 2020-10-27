@@ -1,0 +1,71 @@
+<view class="container">
+    
+    <image class="touimage" wx:if="{{appid != null}}" 
+    src="{{userInfo.avatarUrl}}">
+    </image> 
+
+    <image class="touimage" wx:if="{{appid == null}}" >
+        
+    </image> 
+
+    <view class="li-wrap">
+        <view class="list" bindtap="toLogin">
+            <view class="list-l">
+                <view class="icon">
+                    <image class="img" src="/images/icon/icon-address-r.png"></image>
+                </view>
+                <view class="text" wx:if="{{appid != null}}">登录 (已登录)</view>
+                <view class="text" wx:if="{{appid == null}}">登录 (未登录)</view>
+            </view>
+            <view class="arrow"></view>
+        </view>
+    </view>
+
+    <view class="li-wrap">
+        <view class="list" bindtap="toSubmit">
+            <view class="list-l">
+                <view class="icon">
+                    <image class="img" src="/images/icon/icon-address-r.png"></image>
+                </view>
+                <view class="text">个人信息管理</view>
+            </view>
+            <view class="arrow"></view>
+        </view>
+    </view>
+    <view class="li-wrap">
+        <view class="list" bindtap="tolaowulist">
+            <view class="list-l">
+                <view class="icon">
+                    <image class="img" src="/images/icon/icon-address-r.png"></image>
+                </view>
+                <view class="text">隶属劳务公司绑定</view>
+            </view>
+            <view class="arrow"></view>
+        </view>
+    </view>
+    <view class="li-wrap">
+        <view class="list" bindtap="toMyScore">
+            <view class="list-l">
+                <view class="icon">
+                    <image class="img" src="/images/icon/icon-footprint-r.png"></image>
+                </view>
+                <view class="text">我的评分</view>
+            </view>
+            <view class="arrow"></view>
+        </view>
+    </view>
+
+
+
+    <view class="company">
+        <view class="c-wrap">
+            <view class="text">蓝领</view>
+            <view class="line"></view>
+        </view>
+        <view class="tip">最受欢迎的蓝领工作软件</view>
+    </view>
+</view>
+
+
+
+

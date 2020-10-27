@@ -1,0 +1,100 @@
+
+<view class="tview" style="background-color:rgb(220,220,220)" >
+    <view class="tview2">
+      <text>任务编号:</text>
+      <text class="tview4">{{testdata.order_id}}</text>
+    </view>
+    <view class="tview2">
+      <text>发布单位:</text>
+      <text class="tview4">{{testdata.companyname}}</text>
+    </view>
+    <view class="tview2">
+      <text>每工工价:</text>
+      <text class="tview4">{{testdata.price_per_people}}</text>
+    </view>
+    <view class="tview2">
+      <text>总金额:</text>
+      <text class="tview4">{{testdata.price_per_people*testdata.days}}</text>
+    </view>
+    
+    <view class="tview2">
+      <text>任务天数:</text>
+      <text class="tview4">{{testdata.days}}</text>
+    </view>
+    <view class="tview2">
+      <text>所需工种:</text>
+      <text class="tview4">{{testdata.workers_name}}</text>
+    </view>
+    <view class="tview2">
+      <text>所需人数:</text>
+      <text class="tview4">{{testdata.number}}</text>
+    </view>
+    <view class="tview2">
+      <text>做工情况（日夜）:</text>
+      <text class="tview4" wx:if="{{testdata.is_daynight == 0}}">日班</text>
+      <text class="tview4" wx:if="{{testdata.is_daynight == 1}}">夜班</text>
+    </view>
+    <view class="tview2">
+      <text>是否有加班:</text>
+      <text class="tview4" wx:if="{{testdata.is_jiaban == 0}}">加班</text>
+      <text class="tview4" wx:if="{{testdata.is_jiaban == 1}}">不加班</text>
+    </view>
+    <view class="tview2">
+      <text>是否有住宿:</text>
+      <text class="tview4" wx:if="{{testdata.is_zhusu == 0}}">有住宿</text>
+      <text class="tview4" wx:if="{{testdata.is_zhusu == 1}}">无住宿</text>
+    </view>
+    <view class="tview2">
+      <text>是否有补贴:</text>
+      <text class="tview4" wx:if="{{testdata.is_butie == 0}}">有补贴</text>
+      <text class="tview4" wx:if="{{testdata.is_butie == 1}}">无补贴</text>
+    </view>
+    <view class="tview2">
+      <text>地点:</text>
+      <text class="tview4">{{testdata.address}}</text>
+    </view>
+    <view class="tview2">
+      <text>地点:</text>
+      <text class="tview4">{{testdata.address}}</text>
+    </view>
+    <view class="tview2">
+      <text>工作开始日期:</text>
+      <text class="tview4">{{testdata.workstartday}}</text>
+    </view>
+    <view class="tview2">
+      <text>加班费:</text>
+      <text class="tview4">{{testdata.jiabanprice}}</text>
+    </view>
+    <view class="tview2">
+      <text>住宿地址:</text>
+      <text class="tview4">{{testdata.zhusuaddress}}</text>
+    </view>
+    <view class="tview2">
+      <text>高温补贴:</text>
+      <text class="tview4">{{testdata.gaowenbutie}}</text>
+    </view>
+    <view class="tview2">
+      <text>差旅补贴:</text>
+      <text class="tview4">{{testdata.chailvbutie}}</text>
+    </view>
+    <view class="tview2">
+      <text>住宿补贴:</text>
+      <text class="tview4">{{testdata.zhusubutie}}</text>
+    </view>
+    <view class="tview2">
+      <text>工作开始时间:</text>
+      <text class="tview4">{{testdata.startworktime}}</text>
+    </view>
+    <view class="tview2">
+      <text>工作结束时间:</text>
+      <text class="tview4">{{testdata.endworktime}}</text>
+    </view>
+    
+
+</view>
+
+
+<button wx:if="{{jiedanflag == 1}}" style="background-color:gray;" form-type="submit" >我要接单</button>
+<button wx:if="{{jiedanflag == 0}}" form-type="submit" bindtap="jiedan">我要接单</button>
+<button wx:if="{{jiedanflag == 1}}" form-type="submit" bindtap="quxiaojiedan">我要取消接单</button>
+<button wx:if="{{jiedanflag == 0}}" style="background-color:gray;" form-type="submit" >我要取消接单</button>
