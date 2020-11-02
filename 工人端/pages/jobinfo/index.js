@@ -77,6 +77,9 @@ Page({
           if(res.data.data == '401_fail'){
             wx.showModal({title: '客户公司已接收，请联系客服取消'})
           } 
+          else if (res.data.data == '501_fail'){
+            wx.showModal({title: '该任务已完成，不可取消'})
+          } 
           else{wx.showModal({
             title: '取消接单成功'})}
         }
